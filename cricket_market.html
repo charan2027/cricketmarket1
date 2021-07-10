@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket market</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .all{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .container{
+        position: relative;
+        top: 30%;
+        width: 300px;
+        height: 420px;
+       
+    
+        
+        
+    }
+
+    .player-img img{
+        
+        width: 300px;
+        height: 250px;
+       
+    }
+    .player-detail{
+        width: 300px;
+        height: 190px;
+        background: #21222d;
+        border-radius: 0 40% 0 0;
+        padding: .8rem;
+    color: #fff;
+        }
+        .player-detail p{
+            font-size: .8rem;
+            color: #5f5f6B;
+        }
+        .buttons{
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .btn{
+            position: relative;
+            border: none;
+            outline: none;
+            background: #35353F;
+            color: #fff;
+            height: 40px;
+            border-radius: 50px;
+            font-size: .9rem;
+
+        }
+        .cart{
+            width: 160px;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 1px solid #35353F;
+            height: 45px;
+            transition: .3s;
+            cursor: pointer;
+        }
+        .cart::before{
+            width: 165px;
+            border-radius: 50px;
+
+        }
+        .btn:hover::before{
+            border-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <br><br>
+   
+   <div class="all">
+    <div class="container" id="c1">
+        <!--players-->
+       <div class="player-img">
+           <img src="teamplayer.jpg" alt="">
+       </div>
+       <div class="player-detail">
+           <span>Players</span>
+       <p>Know more about players</p>
+       <div class="bittons">
+           <button class="btn cart"> View more</button>
+
+       </div>
+       </div>
+
+       </div>
+
+       <div class="container" style="padding-left: 50px;">
+        <!--teams-->
+       <div class="player-img">
+           <img src="team.jpg" alt="">
+       </div>
+       <div class="player-detail">
+           <span>Players</span>
+       <p>Know more about players</p>
+       <div class="bittons">
+           <button class="btn cart"> View more</button>
+
+       </div>
+       </div>
+
+       </div>
+
+
+       <!--make your team-->
+       <div class="container" style="padding-left: 50px;">
+        <!--teams-->
+       <div class="player-img">
+           <img src="makeyourteam.jpg" alt="">
+       </div>
+       <div class="player-detail">
+           <span>Players</span>
+       <p>Know more about players</p>
+       <div class="bittons">
+           <button class="btn cart"> View more</button>
+
+       </div>
+       </div>
+
+       </div>
+
+   </div>
+         
+</body>
+</html>
